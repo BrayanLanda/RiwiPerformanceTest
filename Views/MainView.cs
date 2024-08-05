@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VeterinaryCenter.DataTest;
 
 namespace VeterinaryCenter.Views
 {
@@ -11,7 +12,7 @@ namespace VeterinaryCenter.Views
         public int ShowMenu()
         {
             Console.Clear();
-            ShowHeader();
+            ManagerApp.ShowHeader();
             Console.WriteLine("1. Gestionar Gatos");
             Console.WriteLine("2. Gestionar Perros");
             Console.WriteLine("3. Gestionar Macotas");
@@ -41,18 +42,9 @@ namespace VeterinaryCenter.Views
         public void ShowMessage(string mensaje)
         {
             System.Console.WriteLine(mensaje);
-            ShowFooter();
+            ManagerApp.ShowFooter();
             System.Console.WriteLine("Presione cualquier tecla para continuar...");
             Console.ReadKey();
-        }
-
-        public static void ShowHeader()
-        {
-            System.Console.WriteLine("##################### Clinic Veterinary #####################");
-        }
-        public static void ShowFooter()
-        {
-            System.Console.WriteLine("##################### Riwi Veterinary #####################");
         }
 
     }

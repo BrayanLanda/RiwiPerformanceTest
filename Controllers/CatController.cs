@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VeterinaryCenter.DataTest;
 using VeterinaryCenter.Models;
 using VeterinaryCenter.Views;
 
@@ -51,7 +52,7 @@ namespace VeterinaryCenter.Controllers
         //Mostrar todos los gatos
         private void ShowCats()
         {
-            MainView.ShowHeader();
+            ManagerApp.ShowHeader();
             _app.ShowCats();
             mainView.ShowMessage("--------------------------");
 

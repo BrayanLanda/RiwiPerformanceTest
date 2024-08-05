@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VeterinaryCenter.DataTest;
 using VeterinaryCenter.Models;
 using VeterinaryCenter.Views;
 
@@ -50,7 +51,7 @@ namespace VeterinaryCenter.Controllers
         //Mostrar todos los perros
         private void ShowDogs()
         {
-            MainView.ShowHeader();
+            ManagerApp.ShowHeader();
             _app.ShowDogs();
             mainView.ShowMessage("--------------------------");
 
@@ -89,7 +90,7 @@ namespace VeterinaryCenter.Controllers
 
             if (dog != null)
             {
-                System.Console.WriteLine($"Perro encontrado: {dog.GetName()} {dog.GetColor}");
+                System.Console.WriteLine($"Perro encontrado: {dog.GetName()} {dog.GetColor()} {dog.GetBirthdate()} {dog.GetBreed()} {dog.Temperament} {dog.CoatType}");
             }
             else
             {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VeterinaryCenter.Models
 {
-    public class Animal
+    public abstract class Animal
     {
         //Atributos de clase pricipal
         private static int _idAnimal = 1;
@@ -33,21 +33,16 @@ namespace VeterinaryCenter.Models
             Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Nombre: {Name}");
             Console.WriteLine($"Fecha de Nacimiento: {Birthdate}");
-            System.Console.WriteLine($"Edad: {CalculateAgeInMonths()} años");
+            System.Console.WriteLine($"Edad: {CalculateAgeInMonths()} meses");
             Console.WriteLine($"Raza: {Breed}");
             Console.WriteLine($"Color: {Color}");
             Console.WriteLine($"Peso en Kilos: {WeightInKg}");
         }
 
-        //Metodo para calcular la edad y mostrarla
+        //Metodo para calcular la edad 
         protected int CalculateAgeInMonths()
         {
-            int age = DateTime.Today.Year - Birthdate.Year;
-            if (DateTime.Today.Month < Birthdate.Month || (DateTime.Today.Month == Birthdate.Month && DateTime.Today.Day < Birthdate.Day))
-            {
-                age--;
-            }
-            return age;
+            return (DateTime.Now.Year - Birthdate.Year) * 12 + DateTime.Now.Month - Birthdate.Month;
         }
 
         //Metodo revision basica
@@ -104,6 +99,12 @@ namespace VeterinaryCenter.Models
         public void SetWeightInKg(double weightInKg)
         {
             WeightInKg = weightInKg;
+        }
+
+        //Metodo para mostrar la edad
+        public int ShowAge()
+        {
+            return CalculateAgeInMonths();
         }
     }
 }

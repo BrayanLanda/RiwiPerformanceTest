@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VeterinaryCenter.DataTest;
 using VeterinaryCenter.Models;
 using VeterinaryCenter.Validations;
 
@@ -12,7 +13,7 @@ namespace VeterinaryCenter.Views
         public int ShowCatMenu()
         {
             Console.Clear();
-            MainView.ShowHeader();
+            ManagerApp.ShowHeader();
             Console.WriteLine("================ Gestion Gatos ================ ");
             Console.WriteLine("1. Mostrar gatos");
             Console.WriteLine("2. Agregar gato");

@@ -30,7 +30,6 @@ namespace VeterinaryCenter.Models
             base.ShowDetails();
             Console.WriteLine($"Estado de la Cria: {BreedingStatus}");
             Console.WriteLine($"Temperamento: {Temperament}");
-            Console.WriteLine($"Estado de la Cria: {BreedingStatus}");
             Console.WriteLine($"Numero de micropchip: {MicrochipNumber}");
             Console.WriteLine($"Volumen: {BarkVolume}");
             Console.WriteLine($"Tipo de pelaje: {CoatType}");
@@ -39,13 +38,13 @@ namespace VeterinaryCenter.Models
         //Metodo para validar si esta castrado
         public void CastrateAnimal()
         {
-
+            System.Console.WriteLine($"El perro {Name} esta castrado");
         }
 
         //Metodo para saber el estado del pelo
         public void Hairdress()
         {
-
+            System.Console.WriteLine($"El perro {Name} esta motilado ");
         }
     }
 }
