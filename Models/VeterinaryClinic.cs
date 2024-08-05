@@ -98,7 +98,7 @@ namespace VeterinaryCenter.Models
         //     }
         // }
 
-        //Metodos para buscar
+        //Metodos para buscar por id
         public Cat GetCatById(int id)
         {
             return cats.FirstOrDefault(c => c.GetId() == id);
@@ -108,12 +108,10 @@ namespace VeterinaryCenter.Models
             return dogs.FirstOrDefault(d => d.GetId() == id);
         }
 
-        //Datos de pruebas
-
-        
-        // public VeterinaryClinic()
-        // {
-            
-        // }
+        //metodo para buscar un perro por nombre
+        public Dog GetDogByName(string name)
+        {
+            return dogs.FirstOrDefault(d => d.GetName() == name);
+        }
     }
 }
