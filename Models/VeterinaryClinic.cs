@@ -90,13 +90,6 @@ namespace VeterinaryCenter.Models
                 System.Console.WriteLine("-------------------------------------");
             }
         }
-        // public void Show()
-        // {
-        //     foreach (var vehicle in vehicles)
-        //     {
-        //         vehicle.ShowDetails();
-        //     }
-        // }
 
         //Metodos para buscar por id
         public Cat GetCatById(int id)
@@ -108,10 +101,15 @@ namespace VeterinaryCenter.Models
             return dogs.FirstOrDefault(d => d.GetId() == id);
         }
 
-        //metodo para buscar un perro por nombre
+        //metodo para buscar un perro y gato por nombre
         public Dog GetDogByName(string name)
         {
             return dogs.FirstOrDefault(d => d.GetName() == name);
+        }
+        //metodo para buscar un perro y gato por nombre
+        public Cat GetCatByName(string name)
+        {
+            return cats.FirstOrDefault(c => c.GetName() == name);
         }
     }
 }
