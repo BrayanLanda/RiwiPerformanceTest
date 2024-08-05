@@ -9,6 +9,7 @@ namespace VeterinaryCenter.Views
 {
     public class ViewQueries
     {
+        //Manu princial de los queries
         public int ShowQueriesMenu()
         {
             Console.Clear();
@@ -28,6 +29,7 @@ namespace VeterinaryCenter.Views
             return option;
         }
 
+        //pra realizar una consulta por string
         public string GetNameIntForAction(string action)
         {
             string name;

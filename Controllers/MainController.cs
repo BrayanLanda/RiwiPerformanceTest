@@ -11,6 +11,7 @@ namespace VeterinaryCenter.Controllers
         private readonly MainView _view = new MainView();
         private readonly DogController _dogController = new DogController();
         private readonly CatController _catController = new CatController();
+        private readonly QueriesController _queController = new QueriesController();
         
         //Metodo principal para correr aplicacion
         public void Run()
@@ -28,10 +29,9 @@ namespace VeterinaryCenter.Controllers
                         _dogController.ManageDog();
                         break;
 
-                    /*case 3:
-                        ManageVehicle();
+                    case 3:
+                        _queController.ManageQueries();
                         break;
-                        */
                     case 4:
                         exit = true;
                         break;

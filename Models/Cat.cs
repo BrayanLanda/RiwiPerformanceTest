@@ -29,13 +29,13 @@ namespace VeterinaryCenter.Models
         //Metodo para validar si esta castrado
         public void CastrateAnimal()
         {
-
+            System.Console.WriteLine($"El gato {Name} esta castrado");
         }
 
-        //Metodo para saber el color del vestido
+        //Metodo para saber el estado del pelo
         public void Hairdress()
         {
-
+            System.Console.WriteLine($"El gato {Name} esta motilado ");
         }
     }
 }

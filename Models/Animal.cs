@@ -8,7 +8,6 @@ namespace VeterinaryCenter.Models
     public abstract class Animal
     {
         //Atributos de clase pricipal
-        private static int _idAnimal = 1;
         protected int Id { get; set; }
         protected string Name { get; set; }
         protected DateOnly Birthdate { get; set; }

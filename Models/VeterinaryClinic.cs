@@ -32,8 +32,8 @@ namespace VeterinaryCenter.Models
             dogs.Add(new Dog(idCounter++, "Rocky", new DateOnly(2015, 6, 4), "Labrador", "Gris", 6.9, true, "NORMAL", "8585", "pelo corto", "pelo corto"));
 
             //Datos prueba Gatos
-            cats.Add(new Cat(idCounter++, "Simon", new DateOnly(2018, 8, 9), "Angora", "Blanco", 2.5, false,"sin pelo"));
-            cats.Add(new Cat(idCounter++, "Chanel", new DateOnly(2015, 1, 25), "Criolla", "Gris y Blanco", 1.5, false,"pelo corto"));
+            cats.Add(new Cat(idCounter++, "simon", new DateOnly(2018, 8, 9), "Angora", "Blanco", 2.5, false,"sin pelo"));
+            cats.Add(new Cat(idCounter++, "chanel", new DateOnly(2015, 1, 25), "Criolla", "Gris y Blanco", 1.5, false,"pelo corto"));
         }
 
         //Metodos para agregar
