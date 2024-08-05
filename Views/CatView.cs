@@ -9,7 +9,7 @@ namespace VeterinaryCenter.Views
 {
     public class CatView
     {
-        public int ShowCustomerMenu()
+        public int ShowCatMenu()
         {
             Console.Clear();
             Console.WriteLine("============= Gestion Gatos ============= ");
@@ -32,7 +32,7 @@ namespace VeterinaryCenter.Views
         public Cat GetCustomerInfo(Cat cat = null)
         {
             Console.Clear();
-            System.Console.WriteLine(cat == null ? "==== Agregar un nuevo customer ====" : "==== Editar un customer ====");
+            System.Console.WriteLine(cat == null ? "==== Agregar un nuevo gato ====" : "==== Editar un gato ====");
 
             string name;
             do
