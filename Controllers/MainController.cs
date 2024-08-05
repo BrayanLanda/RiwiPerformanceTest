@@ -30,10 +30,8 @@ namespace VeterinaryCenter.Controllers
                     case 3:
                         ManageVehicle();
                         break;
+                        */
                     case 4:
-                        ManageQueries();
-                        break;*/
-                    case 5:
                         exit = true;
                         break;
                 }

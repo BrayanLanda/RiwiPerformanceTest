@@ -66,7 +66,7 @@ namespace VeterinaryCenter.Views
             string color;
             do
             {
-                System.Console.Write("color: ");
+                System.Console.Write("Color: ");
                 color = Console.ReadLine().Trim();
                 if (!InputValidator.IsAlphabetic(color))
                 {

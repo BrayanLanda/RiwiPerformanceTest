@@ -12,8 +12,8 @@ namespace VeterinaryCenter.Views
         {
             Console.Clear();
             Console.WriteLine("============= Clinica Veterinaria ============= ");
-            Console.WriteLine("1. Gestionar Perros");
-            Console.WriteLine("2. Gestionar Gatos");
+            Console.WriteLine("1. Gestionar Gatos");
+            Console.WriteLine("2. Gestionar Perros");
             Console.WriteLine("3. Gestionar Macotas");
             Console.WriteLine("4. Salir");
             Console.Write("Elija una opcion: ");
