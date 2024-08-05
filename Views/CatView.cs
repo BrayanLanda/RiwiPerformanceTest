@@ -29,7 +29,7 @@ namespace VeterinaryCenter.Views
         }
 
         //Metodo para agregar o editar un gato
-        public Cat GetCustomerInfo(Cat cat = null)
+        public Cat GetCatInfo(Cat cat = null)
         {
             Console.Clear();
             System.Console.WriteLine(cat == null ? "==== Agregar un nuevo gato ====" : "==== Editar un gato ====");

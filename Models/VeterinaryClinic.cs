@@ -66,7 +66,7 @@ namespace VeterinaryCenter.Models
                 System.Console.WriteLine("-----------------------------");
             }
         }
-        public void Showcats()
+        public void ShowCats()
         {
             foreach (var cat in cats)
             {
@@ -82,11 +82,11 @@ namespace VeterinaryCenter.Models
         // }
 
         //Metodos para buscar
-        public Cat GetCustomerById(int id)
+        public Cat GetCatById(int id)
         {
             return cats.FirstOrDefault(c => c.GetId() == id);
         }
-        public Dog FindDriverById(int id)
+        public Dog GetDogbyId(int id)
         {
             return dogs.FirstOrDefault(d => d.GetId() == id);
         }
