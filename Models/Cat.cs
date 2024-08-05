@@ -18,6 +18,14 @@ namespace VeterinaryCenter.Models
             FurLength = furLength;
         }
 
+        //Metodo para mostrar detalles
+        public override void ShowDetails()
+        {
+            base.ShowDetails();
+            Console.WriteLine($"Estado de la Cria: {BreedingStatus}");
+            Console.WriteLine($"Longitud del pelaje: {FurLength}");
+        }
+
         //Metodo para validar si esta castrado
         public void CastrateAnimal()
         {
