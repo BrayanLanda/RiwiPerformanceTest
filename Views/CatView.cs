@@ -12,7 +12,8 @@ namespace VeterinaryCenter.Views
         public int ShowCatMenu()
         {
             Console.Clear();
-            Console.WriteLine("============= Gestion Gatos ============= ");
+            MainView.ShowHeader();
+            Console.WriteLine("================ Gestion Gatos ================ ");
             Console.WriteLine("1. Mostrar gatos");
             Console.WriteLine("2. Agregar gato");
             Console.WriteLine("3. Eliminar gato");
@@ -88,8 +89,16 @@ namespace VeterinaryCenter.Views
                 System.Console.Write("Formato invalido. Intente de nuevo: ");
             }
 
-            int id = 5;
-            string furLength = "alto";
+            string furLength;
+            do
+            {
+                System.Console.Write("Tipo de Pelo (SIN PELO/PELO CORTO/PELO MEDIANO/PELO LARGO ): ");
+                furLength = Console.ReadLine().Trim().ToUpper();
+                if (furLength != "SIN PELO" && furLength != "PELO CORTO" && furLength != "PELO MEDIANO" && furLength != "PELO LARGO") 
+                System.Console.WriteLine("Tipo de pelo invalido. Intente de nuevo.");
+            } while (furLength != "SIN PELO" && furLength != "PELO CORTO" && furLength != "PELO MEDIANO" && furLength != "PELO LARGO");
+
+            int id = 1;
 
             if (cat == null)
             {

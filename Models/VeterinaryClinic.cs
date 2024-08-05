@@ -61,9 +61,7 @@ namespace VeterinaryCenter.Models
         {
             foreach (var dog in dogs)
             {
-                System.Console.WriteLine("----------------------------");
                 dog.ShowDetails();
-                System.Console.WriteLine("-----------------------------");
             }
         }
         public void ShowCats()
@@ -86,7 +84,7 @@ namespace VeterinaryCenter.Models
         {
             return cats.FirstOrDefault(c => c.GetId() == id);
         }
-        public Dog GetDogbyId(int id)
+        public Dog GetDogById(int id)
         {
             return dogs.FirstOrDefault(d => d.GetId() == id);
         }

@@ -9,10 +9,12 @@ namespace VeterinaryCenter.Controllers
 {
     public class CatController
     {
+        //Instancia de clases
         public MainView mainView = new MainView();
         public CatView catView = new CatView();
         public VeterinaryClinic _app = new VeterinaryClinic("Clinica Riwi", "Outle Guayabal");
 
+        //aplicacion principal para gestionar gatos
         public void ManageCat()
         {
             bool back = false;
@@ -49,7 +51,7 @@ namespace VeterinaryCenter.Controllers
         //Mostrar todos los gatos
         private void ShowCats()
         {
-            System.Console.WriteLine("------------------------");
+            MainView.ShowHeader();
             _app.ShowCats();
             mainView.ShowMessage("--------------------------");
 
@@ -60,19 +62,18 @@ namespace VeterinaryCenter.Controllers
         {
             Cat cat = catView.GetCatInfo();
             _app.SaveCat(cat);
-            System.Console.WriteLine("------------------------");
             mainView.ShowMessage("Gato agregado exitosamente.");
         }
 
         // Método para eliminar un gato
         private void DeleteCat()
         {
-            int id = mainView.GetIdIntForAction("eliminar");
-            Cat customer = _app.GetCatById(id); // Usar el método de AdministradorApp para obtener el cliente
+            int id = mainView.GetIdIntForAction("Eliminar");
+            Cat cat = _app.GetCatById(id); // Usar el método de Veterenary para obtener el gato
 
-            if (customer != null)
+            if (cat != null)
             {
-                _app.DeleteCat(customer); // Usar el método de AdministradorApp para eliminar el cliente
+                _app.DeleteCat(cat); // Usar el método de Veterenary para eliminar el gato
                 mainView.ShowMessage("Gato eliminado exitosamente.");
             }
             else
@@ -85,7 +86,7 @@ namespace VeterinaryCenter.Controllers
         private void SearchCat()
         {
             int id = mainView.GetIdIntForAction("Buscar");
-            Cat cat = _app.GetCatById(id); // Usar el método de AdministradorApp para obtener el cliente
+            Cat cat = _app.GetCatById(id); // Usar el método de Veterenary para obtener el gato
 
             if (cat != null)
             {

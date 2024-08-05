@@ -11,7 +11,7 @@ namespace VeterinaryCenter.Views
         public int ShowMenu()
         {
             Console.Clear();
-            Console.WriteLine("============= Clinica Veterinaria ============= ");
+            ShowHeader();
             Console.WriteLine("1. Gestionar Gatos");
             Console.WriteLine("2. Gestionar Perros");
             Console.WriteLine("3. Gestionar Macotas");
@@ -41,8 +41,19 @@ namespace VeterinaryCenter.Views
         public void ShowMessage(string mensaje)
         {
             System.Console.WriteLine(mensaje);
+            ShowFooter();
             System.Console.WriteLine("Presione cualquier tecla para continuar...");
             Console.ReadKey();
         }
+
+        public static void ShowHeader()
+        {
+            System.Console.WriteLine("##################### Clinic Veterinary #####################");
+        }
+        public static void ShowFooter()
+        {
+            System.Console.WriteLine("##################### Riwi Veterinary #####################");
+        }
+
     }
 }

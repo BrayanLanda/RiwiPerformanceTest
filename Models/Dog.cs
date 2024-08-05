@@ -29,7 +29,7 @@ namespace VeterinaryCenter.Models
         {
             base.ShowDetails();
             Console.WriteLine($"Estado de la Cria: {BreedingStatus}");
-            Console.WriteLine($"Temperatura: {Temperament}");
+            Console.WriteLine($"Temperamento: {Temperament}");
             Console.WriteLine($"Estado de la Cria: {BreedingStatus}");
             Console.WriteLine($"Numero de micropchip: {MicrochipNumber}");
             Console.WriteLine($"Volumen: {BarkVolume}");
@@ -42,7 +42,7 @@ namespace VeterinaryCenter.Models
 
         }
 
-        //Metodo para saber el color del vestido
+        //Metodo para saber el estado del pelo
         public void Hairdress()
         {
 

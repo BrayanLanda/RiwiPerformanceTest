@@ -8,6 +8,7 @@ namespace VeterinaryCenter.Models
     public class Animal
     {
         //Atributos de clase pricipal
+        private static int _idAnimal = 1;
         protected int Id { get; set; }
         protected string Name { get; set; }
         protected DateOnly Birthdate { get; set; }
@@ -41,7 +42,7 @@ namespace VeterinaryCenter.Models
         //Metodo para calcular la edad y mostrarla
         protected int CalculateAgeInMonths()
         {
-            int age = DateTime.Today.Year - Birthdate.Month;
+            int age = DateTime.Today.Year - Birthdate.Year;
             if (DateTime.Today.Month < Birthdate.Month || (DateTime.Today.Month == Birthdate.Month && DateTime.Today.Day < Birthdate.Day))
             {
                 age--;

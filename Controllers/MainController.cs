@@ -24,10 +24,11 @@ namespace VeterinaryCenter.Controllers
                     case 1:
                         _catController.ManageCat();
                         break;
-                    /*case 2:
-                        ManageCustomers();
+                    case 2:
+                        _dogController.ManageDog();
                         break;
-                    case 3:
+
+                    /*case 3:
                         ManageVehicle();
                         break;
                         */
