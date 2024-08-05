@@ -91,11 +91,9 @@ namespace VeterinaryCenter.Controllers
 
             if (cat != null)
             {
-                // System.Console.WriteLine($"Cliente encontrado: {customer.GetName()} {customer.GetLastName()}");
-                // System.Console.WriteLine($"Documentyo: {customer.GetTypeDocument()}-{customer.GetIdentificationNumber()}");
-                // System.Console.WriteLine($"Cliente encontrado: {customer.GetEmail()}");
-                // System.Console.WriteLine($"Cliente encontrado: {customer.GetPhoneNumber()}");
-                // System.Console.WriteLine("Cliente Encontrado con exito");
+                ManagerApp.ShowHeader();
+                mainView.ShowMessage($"Gato encontrado: Nombre: {cat.GetName()}\nColor: {cat.GetColor()}\nAño de nacimiento: {cat.GetBirthdate()}\nRaza: {cat.GetBreed()}\nTemeperamento: {cat.BreedingStatus}\nPelaje: {cat.FurLength}");
+                ManagerApp.ShowFooter();
             }
             else
             {

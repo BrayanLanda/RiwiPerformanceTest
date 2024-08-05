@@ -21,7 +21,7 @@ namespace VeterinaryCenter.DataTest
         //Metodo para crear un gato
         public static Cat CreateCat()
         {
-            return new Cat(89, "Simon", new DateOnly(2017, 12, 24), "Siamese", "Balnco y Negro", 2.0, false, "pelo corto");
+            return new Cat(89, "Simon", new DateOnly(2017, 12, 24), "Siamese", "Blanco y Negro", 2.0, false, "pelo corto");
         }
             
         //Metodo estatico de mostrar header

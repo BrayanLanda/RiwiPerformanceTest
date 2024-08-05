@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 using VeterinaryCenter.DataTest;
@@ -10,6 +11,7 @@ namespace VeterinaryCenter.Views
 {
     public class DogView
     {
+        public int idCounter { get; set; } = 7;
         //Metodo Para mostrar perrors   
         public int ShowDogMenu()
         {
@@ -111,14 +113,14 @@ namespace VeterinaryCenter.Views
                 }
             } while (!InputValidator.IsNumeric(microchipNumber));
 
-            string barkVolume;
-            do
-            {
-                System.Console.Write("Tipo de Pelo (SIN PELO/PELO CORTO/PELO MEDIANO/PELO LARGO ): ");
-                barkVolume = Console.ReadLine().Trim().ToUpper();
-                if (barkVolume != "SIN PELO" && barkVolume != "PELO CORTO" && barkVolume != "PELO MEDIANO" && barkVolume != "PELO LARGO")
-                    System.Console.WriteLine("Tipo de pelo invalido. Intente de nuevo.");
-            } while (barkVolume != "SIN PELO" && barkVolume != "PELO CORTO" && barkVolume != "PELO MEDIANO" && barkVolume != "PELO LARGO");
+            // string barkVolume;
+            // do
+            // {
+            //     System.Console.Write("Tipo de Pelo (SIN PELO/PELO CORTO/PELO MEDIANO/PELO LARGO ): ");
+            //     barkVolume = Console.ReadLine().Trim().ToUpper();
+            //     if (barkVolume != "SIN PELO" && barkVolume != "PELO CORTO" && barkVolume != "PELO MEDIANO" && barkVolume != "PELO LARGO")
+            //         System.Console.WriteLine("Tipo de pelo invalido. Intente de nuevo.");
+            // } while (barkVolume != "SIN PELO" && barkVolume != "PELO CORTO" && barkVolume != "PELO MEDIANO" && barkVolume != "PELO LARGO");
 
             string coatType;
             do
@@ -129,8 +131,9 @@ namespace VeterinaryCenter.Views
                     System.Console.WriteLine("Tipo de pelo invalido. Intente de nuevo.");
             } while (coatType != "SIN PELO" && coatType != "PELO CORTO" && coatType != "PELO MEDIANO" && coatType != "PELO LARGO");
 
-            int id = 5;
+            string barkVolume = coatType;
 
+            int id = idCounter * 24 + idCounter++;
             //Enviar datos para creacion de perro
             if (dog == null)
             {

@@ -90,7 +90,9 @@ namespace VeterinaryCenter.Controllers
 
             if (dog != null)
             {
-                System.Console.WriteLine($"Perro encontrado: {dog.GetName()} {dog.GetColor()} {dog.GetBirthdate()} {dog.GetBreed()} {dog.Temperament} {dog.CoatType}");
+                ManagerApp.ShowHeader();
+                mainView.ShowMessage($"Perro encontrado: Nombre: {dog.GetName()}\nColor: {dog.GetColor()}\nAño de nacimiento: {dog.GetBirthdate()}\nRaza: {dog.GetBreed()}\nTemeperamento: {dog.Temperament}\nPelaje: {dog.CoatType}");
+                ManagerApp.ShowFooter();
             }
             else
             {
