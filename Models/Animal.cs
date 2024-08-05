@@ -54,5 +54,55 @@ namespace VeterinaryCenter.Models
         {
 
         }
+
+        //Gettin y setting
+        public int GetId()
+        {
+            return Id;
+        }
+        public void SetId(int id)
+        {
+            Id = id;
+        }
+        public string GetName()
+        {
+            return Name;
+        }
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+        public DateOnly GetBirthdate()
+        {
+            return Birthdate;
+        }
+        public void SetBirthdate(DateOnly birthdate)
+        {
+            Birthdate = birthdate;
+        }
+        public string GetBreed()
+        {
+            return Breed;
+        }
+        public void SetBreed(string breed)
+        {
+            Breed = breed;
+        }
+        public string GetColor()
+        {
+            return Color;
+        }
+        public void SetColor(string color)
+        {
+            Color = color;
+        }
+        public double GetWeightInKg()
+        {
+            return WeightInKg;
+        }
+        public void SetWeightInKg(double weightInKg)
+        {
+            WeightInKg = weightInKg;
+        }
     }
 }
