@@ -10,6 +10,7 @@ namespace VeterinaryCenter.Views
 {
     public class CatView
     {
+        //Metodo para mostrar accion a realizar
         public int ShowCatMenu()
         {
             Console.Clear();

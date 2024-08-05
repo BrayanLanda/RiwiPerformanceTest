@@ -10,11 +10,12 @@ namespace VeterinaryCenter.Controllers
 {
     public class DogController
     {
-        
+        //Atributos de la clase
         public MainView mainView = new MainView();
         public DogView dogView = new DogView();
         public VeterinaryClinic _app = new VeterinaryClinic("Clinica Riwi", "Outle Guayabal");
 
+        //Clase para ejecutar crud
         public void ManageDog()
         {
             bool back = false;

@@ -10,9 +10,12 @@ namespace VeterinaryCenter.Controllers
 {
     public class QueriesController
     {
+        //Instancia de clases y metodos
         public MainView mainView = new MainView();
         public ViewQueries queriesView = new ViewQueries();
         public VeterinaryClinic _app = new VeterinaryClinic("Clinica Riwi", "Outle Guayabal");
+
+        //Metodo pricipal para ejecutar consulatas
         public void ManageQueries()
         {
             bool back = false;

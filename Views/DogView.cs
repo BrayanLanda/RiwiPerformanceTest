@@ -11,8 +11,10 @@ namespace VeterinaryCenter.Views
 {
     public class DogView
     {
+        //Generando numero para id
         public int idCounter { get; set; } = 7;
-        //Metodo Para mostrar perrors   
+       
+       //Metodo para mostrar accion a realizar
         public int ShowDogMenu()
         {
             Console.Clear();

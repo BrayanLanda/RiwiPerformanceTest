@@ -8,6 +8,7 @@ namespace VeterinaryCenter.Controllers
 {
     public class MainController
     {
+        //Instancia de clases y listas
         private readonly MainView _view = new MainView();
         private readonly DogController _dogController = new DogController();
         private readonly CatController _catController = new CatController();
